@@ -6,7 +6,7 @@ refresh-token:
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
 spring:
   profiles:
-    active: prod
+    active: dev
   data:
     mongodb:
       uri: mongodb://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@${MONGODB_HOST}:${MONGODB_PORT}/?authSource=${MONGODB_DB}&replicaSet=${MONGODB_RS}
